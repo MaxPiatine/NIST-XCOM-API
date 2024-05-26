@@ -1,0 +1,1 @@
+All the data in this directory comes from the National Institute of Standards and Technology (.gov) from the XCOM database offered on \url{https://physics.nist.gov/cgi-bin/Xcom/xcom2?Method=Elem&Output2=Hand}. The data is used for API purposes to facilitate the movement between data and applications. 
