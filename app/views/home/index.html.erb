@@ -13,7 +13,28 @@
 
     <nav class="navbar bg-primary fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand">Navbar</a>
+        <a class="navbar-brand" style="color: #f8f9fa">Navbar</a>
+
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #f8f9fa">Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#docs" style="color: #f8f9fa">Docs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #f8f9fa">API</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html" style="color: #f8f9fa">NIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #f8f9fa">Sign up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #f8f9fa">Sign in</a>
+          </li>
+        </ul>
 
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -25,8 +46,92 @@
     <div class="container" style="margin-top:7%">
       <div class="row">
         <div class="col">
-          <h1>Hello, world!</h1>
+          <h1 id="docs">Documentation</h1>
+          <hr>
         </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <h5 id="docs">API Key</h5>
+            <hr>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <h5>Request Parameters</h5>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">Parameter</th>
+                  <th scope="col">Required</th>
+                  <th scope="col">Description</th>
+                <tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>key</td>
+                  <td>Yes</td>
+                  <td>API Key</td>
+                </tr>
+                <tr>
+                  <td>
+                  element 
+                  </td>
+                  <td>Optional</td>
+                  <td>
+                  Elements are being selected by their atomic number, or their chemical symbol. 
+                  Only elements between 1 through 100 are available. 
+                  
+                  <br><br>
+
+                  Example: element=1
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  compound 
+                  </td>
+                  <td>Optional</td>
+                  <td>
+                  Mixtures may consist of "elemental" components and/or "compound" components.
+                   This is a matter of convenience since it does not change the results.
+                   The user must specify the chemical symbol or formula (as specified above), 
+                   as well as the fraction by weight for each component. The program then uses
+                    these input data to compute the fractions by weight of the individual atomic
+                     constituents, as well as the sum of these fractions. If, in the input data,
+                      the sum of the fractions by weight does not add up to unity, the input data
+                       is accepted, and the program renormalizes all of the fractions by weight
+                        so that they add up to unity.
+                  
+                  <br><br>
+
+                  Example: mixture=h2o
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                  mixture 
+                  </td>
+                  <td>Optional</td>
+                  <td>
+                  Mixtures may consist of "elemental" components and/or "compound" components. 
+                  This is a matter of convenience since it does not change the results. 
+                  The user must specify the chemical symbol or formula (as specified above), 
+                  as well as the fraction by weight for each component. 
+                  The program then uses these input data to compute the fractions by weight of the 
+                  individual atomic constituents, as well as the sum of these fractions. 
+                  If, in the input data, the sum of the fractions by weight does not add up to unity, 
+                  the input data is accepted, and the program renormalizes all of the fractions by weight 
+                  so that they add up to unity.
+                  
+                  <br><br>
+
+                  Example: mixture=h2o
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
       </div>
     </div>
 
